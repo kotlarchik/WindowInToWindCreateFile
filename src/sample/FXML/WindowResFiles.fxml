@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.ControllerWindResFiles">
+   <children>
+      <Label layoutX="110.0" layoutY="55.0" text="Резервное копирование базы данных." textFill="#0200ff">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="258.0" layoutY="130.0" text="Укажите путь сохранения:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <TextField fx:id="txtPath" layoutX="226.0" layoutY="175.0" prefWidth="200.0" />
+      <Button layoutX="426.0" layoutY="175.0" mnemonicParsing="false" onAction="#pressSelect" text="Обзор" />
+      <Button layoutX="360.0" layoutY="303.0" mnemonicParsing="false" onAction="#pressDone" text="Готово">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Button>
+      <CheckBox layoutX="38.0" layoutY="175.0" mnemonicParsing="false" onAction="#checkCourses" text="courses">
+         <font>
+            <Font size="18.0" />
+         </font></CheckBox>
+      <CheckBox layoutX="38.0" layoutY="216.0" mnemonicParsing="false" onAction="#checkLesson" text="lesson">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font size="18.0" />
+         </font></CheckBox>
+      <CheckBox layoutX="38.0" layoutY="257.0" mnemonicParsing="false" onAction="#checkTeachers" text="teachers">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font size="18.0" />
+         </font></CheckBox>
+      <CheckBox layoutX="38.0" layoutY="296.0" mnemonicParsing="false" onAction="#checkUsers" text="users">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font size="18.0" />
+         </font></CheckBox>
+   </children>
+</Pane>
